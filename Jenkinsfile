@@ -5,7 +5,7 @@ pipeline {
         stage('Build') { 
             steps {
                 tool name: 'testNode'
-                sh 'npm config ls' 
+                sh 'npm list' 
             }
         }
     }
