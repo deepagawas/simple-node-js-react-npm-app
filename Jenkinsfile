@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh "${PATH} --version" 
+                sh '${PATH} --version' 
             }
         }
     }
