@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                tool name: 'testNode'
-                sh 'npm list' 
+                sh 'npm --version' 
             }
         }
     }
