@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install' 
+                tool name: 'testNode'
+                sh 'npm config ls' 
             }
         }
     }
